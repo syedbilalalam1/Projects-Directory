@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects Directory - Bilal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Projects Directory</h1>
+    <div class="filter-buttons">
+      <button onclick="filterProjects('all', true)">All</button>
+      <button onclick="filterProjects('automation', true)">Automation</button>
+      <button onclick="filterProjects('web', true)">Web Development</button>
+      <button onclick="filterProjects('ai', true)">AI/ML</button>
+      <button onclick="filterProjects('tools', true)">Tools</button>
+    </div>
+
+    <div class="directory-header">
+      <span class="col-name">Project</span>
+      <span class="col-category">Category</span>
+      <span class="col-description">Description</span>
+      <span class="col-link">Link</span>
+    </div>
+
+    <div class="projects">
+      <!-- AI/ML Projects -->
+      <div class="directory-entry ai">
+        <span class="col-name">Solver Genie</span>
+        <span class="col-category">AI/ML</span>
+        <span class="col-description">An AI-powered mathematics problem solver that makes complex calculations a breeze.</span>
+        <span class="col-link"><a href="https://solvergenie.site/" target="_blank">Demo</a></span>
+      </div>
+
+      <div class="directory-entry ai">
+        <span class="col-name">OpenManus Colab</span>
+        <span class="col-category">AI/ML</span>
+        <span class="col-description">A Juptyr Notebook (Colab) version of OpenManus</span>
+        <span class="col-link"><a href="https://colab.research.google.com/drive/1lL8tovvgBqgax-M_GShVwhBcX_hDI9PN#scrollTo=jsLeu34W18jI" target="_blank">Demo</a></span>
+      </div>
+
+      <div class="directory-entry ai">
+        <span class="col-name">Health Companion AI</span>
+        <span class="col-category">AI/ML</span>
+        <span class="col-description">AI-powered health tracking and wellness application.</span>
+        <span class="col-link"><a href="https://github.com/syedbilalalam1/HealthCompanion-AI" target="_blank">GitHub</a></span>
+      </div>
+
+      <div class="directory-entry ai">
+        <span class="col-name">Pentest GPT</span>
+        <span class="col-category">AI/ML</span>
+        <span class="col-description">AI-driven ethical hacking assistant for security testing.</span>
+        <span class="col-link"><a href="https://github.com/syedbilalalam1/PentestGPT" target="_blank">GitHub</a></span>
+      </div>
+
+      <div class="directory-entry ai">
+        <span class="col-name">Chat with DeepSeek</span>
+        <span class="col-category">AI/ML</span>
+        <span class="col-description">ChatGPT-style interface for DeepSeek's R1 model.</span>
+        <span class="col-link"><a href="https://github.com/syedbilalalam1/ChatWithDeepSeek-R1-671-b" target="_blank">GitHub</a></span>
+      </div>
+
+      <div class="directory-entry ai">
+        <span class="col-name">Freelancer Buddy</span>
+        <span class="col-category">AI/ML</span>
+        <span class="col-description">AI-powered workspace for freelancers and professionals.</span>
+        <span class="col-link"><a href="https://github.com/syedbilalalam1/FreelancerBuddy" target="_blank">GitHub</a></span>
+      </div>
+
+      <div class="directory-entry ai">
+        <span class="col-name">Chet Gaslight Bot</span>
+        <span class="col-category">AI/ML</span>
+        <span class="col-description">AI-powered marketplace listing bot inspired by Michael Reeves.</span>
+        <span class="col-link"><a href="https://github.com/syedbilalalam1/Chet-GaslightBot" target="_blank">GitHub</a></span>
+      </div>
+
+      <!-- Web Development Projects -->
+      <div class="directory-entry web">
+        <span class="col-name">Simple Book Finder</span>
+        <span class="col-category">Web Dev</span>
+        <span class="col-description">A comprehensive book database with powerful search capabilities.</span>
+        <span class="col-link"><a href="https://simplebookfinder.site/" target="_blank">Demo</a></span>
+      </div>
+
+      <div class="directory-entry web">
+        <span class="col-name">Pochacco Social Media</span>
+        <span class="col-category">Web Dev</span>
+        <span class="col-description">A Social Media Application with a cozy interface.</span>
+        <span class="col-link"><a href="https://github.com/syedbilalalam1/PochaccoSocial" target="_blank">GitHub</a></span>
+      </div>
+
+      <div class="directory-entry web">
+        <span class="col-name">Sabeel</span>
+        <span class="col-category">Web Dev</span>
+        <span class="col-description">A comprehensive Islamic web application for enhancing Ramadan experience.</span>
+        <span class="col-link"><a href="https://github.com/syedbilalalam1/Sabeel" target="_blank">GitHub</a></span>
+      </div>
+
+      <div class="directory-entry web">
+        <span class="col-name">Business Tracker</span>
+        <span class="col-category">Web Dev</span>
+        <span class="col-description">Track import/export and business metrics webapp.</span>
+        <span class="col-link"><a href="https://github.com/syedbilalalam1/BusinessTracker" target="_blank">GitHub</a></span>
+      </div>
+
+      <!-- Automation Projects -->
+      <div class="directory-entry automation">
+        <span class="col-name">Tweety</span>
+        <span class="col-category">Automation</span>
+        <span class="col-description">Advanced Twitter bot for generating and posting content about backend development.</span>
+        <span class="col-link"><a href="https://github.com/syedbilalalam1/Tweety" target="_blank">GitHub</a></span>
+      </div>
+
+      <div class="directory-entry automation">
+        <span class="col-name">Reddit Commenter</span>
+        <span class="col-category">Automation</span>
+        <span class="col-description">AI-powered bot for automated Reddit interactions.</span>
+        <span class="col-link"><a href="https://github.com/syedbilalalam1/RedditCommenter-AI" target="_blank">GitHub</a></span>
+      </div>
+
+      <div class="directory-entry automation">
+        <span class="col-name">Auto Stack AI</span>
+        <span class="col-category">Automation</span>
+        <span class="col-description">AI-powered StackExchange automation tool.</span>
+        <span class="col-link"><a href="https://github.com/syedbilalalam1/AutoStack-AI" target="_blank">GitHub</a></span>
+      </div>
+
+      <!-- Tools Projects -->
+      <div class="directory-entry tools">
+        <span class="col-name">Bulk Downloader</span>
+        <span class="col-category">Tools</span>
+        <span class="col-description">Powerful CLI designed to perform dictionary attacks on password-protected ZIP and RAR files.</span>
+        <span class="col-link"><a href="https://github.com/syedbilalalam1/PwnedArchive" target="_blank">GitHub</a></span>
+      </div>
+
+      <div class="directory-entry tools">
+        <span class="col-name">Screenshot Logger</span>
+        <span class="col-category">Tools</span>
+        <span class="col-description">A CLI-based tool with a GUI interface that automatically captures screenshots at fixed intervals.</span>
+        <span class="col-link"><a href="https://github.com/syedbilalalam1/Screenshot-Logger" target="_blank">GitHub</a></span>
+      </div>
+
+      <div class="directory-entry tools">
+        <span class="col-name">Pwned Archive</span>
+        <span class="col-category">Tools</span>
+        <span class="col-description">Efficient tool to download multiple files from URLs at once.</span>
+        <span class="col-link"><a href="https://github.com/syedbilalalam1/BulkDownloader" target="_blank">GitHub</a></span>
+      </div>
+
+      <div class="directory-entry tools">
+        <span class="col-name">Mass URL Shortener</span>
+        <span class="col-category">Tools</span>
+        <span class="col-description">Powerful tool to shorten bulk URLs at once.</span>
+        <span class="col-link"><a href="https://github.com/syedbilalalam1/MassURLShortener" target="_blank">GitHub</a></span>
+      </div>
+
+      <div class="directory-entry tools">
+        <span class="col-name">Simple Random Password</span>
+        <span class="col-category">Tools</span>
+        <span class="col-description">Lightweight random password generator.</span>
+        <span class="col-link"><a href="https://github.com/syedbilalalam1/SimpleRandomPassword" target="_blank">GitHub</a></span>
+      </div>
+
+      <div class="directory-entry tools">
+        <span class="col-name">Compression Genie</span>
+        <span class="col-category">Tools</span>
+        <span class="col-description">Video compression tool using ffmpeg.</span>
+        <span class="col-link"><a href="https://github.com/syedbilalalam1/CompressionGenie" target="_blank">GitHub</a></span>
+      </div>
+
+      <div class="directory-entry tools">
+        <span class="col-name">Simple Chess Bot</span>
+        <span class="col-category">Tools</span>
+        <span class="col-description">Chess.com automation Chrome Extension.</span>
+        <span class="col-link"><a href="https://github.com/syedbilalalam1/SimpleChessBot" target="_blank">GitHub</a></span>
+      </div>
+
+      <div class="directory-entry tools">
+        <span class="col-name">Simple Netflix Checker</span>
+        <span class="col-category">Tools</span>
+        <span class="col-description">Educational tool for checking Netflix accounts.</span>
+        <span class="col-link"><a href="https://github.com/syedbilalalam1/SimpleNetflixChecker" target="_blank">GitHub</a></span>
+      </div>
+
+      <div class="directory-entry tools">
+        <span class="col-name">CAD Projects</span>
+        <span class="col-category">Tools</span>
+        <span class="col-description">Collection of SolidWorks models and simulations.</span>
+        <span class="col-link"><a href="https://github.com/syedbilalalam1/CAD-Projects" target="_blank">GitHub</a></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
